@@ -1,21 +1,31 @@
-// src/pages/ScrollPage.tsx
-import clsx from 'clsx';
-import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
+// src/components/ScrollPageSection.tsx
+import { useRef } from 'react';
+import { motion, useScroll, useTransform } from 'framer-motion';
 
-export default ({ children, className }: { children: React.ReactNode, className?: string }) => {
-  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 });
+type ScrollPageSectionProps = {
+  children: React.ReactNode;
+  className?: string;
+};
+
+export default function ScrollPageSection({ children, className }: ScrollPageSectionProps) {
+  const ref = useRef<HTMLDivElement>(null);
+
+  // Track scroll within this section
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start end", "end start"], // when top enters viewport to when it leaves top
+  });
+
+  // Fade in and out based on scroll progress
+  const opacity = useTransform(scrollYProgress, [0, 0.2, 0.6, 0.8], [0, 1, 1, 0]);
 
   return (
     <motion.div
       ref={ref}
-      initial={{ opacity: 0, y: 30 }}
-      animate={inView ? { opacity: 1, y: 0 } : {}}
-      transition={{ duration: 0.6, ease: 'easeOut' }}
-      className={clsx([className, "max-w-3xl mx-auto my-32 px-4 text-center"])}
+      style={{ opacity }}
+      className={className}
     >
       {children}
     </motion.div>
   );
-};
-
+}
