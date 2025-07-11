@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Slackey&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap');
+@import "tailwindcss";
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -28,11 +32,20 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  font-family: "Zain", sans-serif;
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 8em;
   line-height: 1.1;
+  font-family: "Slackey", sans-serif;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 2em;
+  font-family: "Zain", sans-serif;
+  font-weight: 400;
 }
 
 button {

@@ -16,18 +16,13 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <h1>BOBAMABOB</h1>
+      
+      <img src="/boba machine man.png" style={{ height: '30rem' }} />
+
+      <h3 className="mt-8">
+        A boba milk tea used to be $2.50. Now we pay up to $8. What happened?
+      </h3>
     </>
   )
 }
