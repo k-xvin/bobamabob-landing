@@ -8,7 +8,7 @@ export default function VerticalSideBanner({ side }: VerticalSideBannerProps) {
 
   return (
     <div
-      className={`fixed slackey ${alignment} top-0 bottom-0 w-16 z-50 hidden sm:flex items-center justify-center overflow-hidden bg-[#8FF0F0]`}
+      className={`fixed gluten ${alignment} top-0 bottom-0 w-16 z-50 hidden sm:flex items-center justify-center overflow-hidden bg-[#8FF0F0]`}
     >
       <div
         className={`animate-verticalScroll whitespace-nowrap text-2xl font-bold text-[#051f37] tracking-widest [writing-mode:vertical-rl] ${

@@ -17,7 +17,7 @@ export default function ScrollPageSection({ children, className }: ScrollPageSec
   });
 
   // Fade in and out based on scroll progress
-  const opacity = useTransform(scrollYProgress, [0, 0.2, 0.6, 0.8], [0, 1, 1, 0]);
+  const opacity = useTransform(scrollYProgress, [0, 0.2, 0.7, 0.85], [0, 1, 1, 0]);
 
   return (
     <motion.div
