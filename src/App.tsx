@@ -77,36 +77,59 @@ function App() {
         </h3>
       </ScrollPageSection>
 
-      <form action="https://api.web3forms.com/submit" method="POST">
-
-        {/* <!-- REQUIRED: Your Access key here. Don't worry this can be public --> */}
-        {/* <!-- Create your Access key here: https://web3forms.com/ --> */}
+      <form
+        action="https://api.web3forms.com/submit"
+        method="POST"
+        className="max-w-lg mx-auto rounded-lg flex flex-col gap-4 my-16"
+      >
         <input type="hidden" name="apikey" value="22dba50c-496d-4ca1-a9b5-c8f8c3ece8cf" />
         <input type="hidden" name="access_key" value="22dba50c-496d-4ca1-a9b5-c8f8c3ece8cf" />
-
-        {/* <!-- Optional: Can be type="hidden" or type="text" for subject --></input> */}
         <input type="hidden" name="subject" value="New Submission from Boba Machine" />
-
-        {/* <!-- Required: if submitting without Javascript 
-         (because by default web3form outputs json) -->
-
-    <!-- If javascript, use "window.location.hash" for redirects -->
-    <input type="hidden" name="redirect" value="https://web3forms.com/success"> */}
-
-        {/* <!-- Optional: But Recommended: To Prevent SPAM Submission. 
-         Make sure its hidden by default --> */}
         <input type="checkbox" name="botcheck" id="" style={{ display: 'none' }} />
 
-        <input type="email" name="email" required />
-        <input type="text" name="First Name" required />
-        <input type="text" name="Phone Number" required />
-        <textarea name="message" cols={30} rows={10} required></textarea>
+        <label className="flex flex-col">
+          <span className="mb-1 font-semibold text-gray-700">Email</span>
+          <input
+        type="email"
+        name="email"
+        required
+        className="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-white-500"
+        placeholder="you@email.com"
+          />
+        </label>
 
-        <button type="submit">Submit Form</button>
+        <label className="flex flex-col">
+          <span className="mb-1 font-semibold text-gray-700">First Name</span>
+          <input
+        type="text"
+        name="Name"
+        required
+        className="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-white-500"
+        placeholder="Your name"
+          />
+        </label>
 
+        <label className="flex flex-col">
+          <span className="mb-1 font-semibold text-gray-700">Message</span>
+          <textarea
+        name="message"
+        cols={30}
+        rows={5}
+        required
+        className="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-white-500 resize-none"
+        placeholder="Words!"
+          ></textarea>
+        </label>
+
+        <button
+          type="submit"
+          className="bg-[#8FF0F0] text-[#051f37] font-bold py-2 px-4 rounded transition-transform duration-200 hover:scale-105"
+        >
+          Submit Form
+        </button>
       </form>
 
-      <footer className='text-grey-400 mt-80'>
+      <footer className='text-grey-400 mt-16'>
         * according to Fortune Business Insights report FBI101564</footer>
     </main>
   )
