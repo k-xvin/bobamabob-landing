@@ -62,8 +62,8 @@ function App() {
 
       <ScrollPageSection className="flex flex-col items-center justify-center">
         <h3 className="max-w-[80%] text-center">
-          As you might tell by the professionalism website, the machine is obviously in
-          an early <b>(pre-seed)</b> stage, and will need a few more iterations before we
+          As you might tell by the professionalism of the website, the machine is in
+          an early stage, and will need a few more iterations before we
           self operate it in a local mall.
         </h3>
       </ScrollPageSection>
@@ -130,7 +130,8 @@ function App() {
       </form>
 
       <footer className='text-grey-400 mt-16'>
-        * according to Fortune Business Insights report FBI101564</footer>
+        * according to Fortune Business Insights report FBI101564 | © 2025, Bobamabob
+        </footer>
     </main>
   )
 }
