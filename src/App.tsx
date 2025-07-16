@@ -40,7 +40,7 @@ function App() {
       <ScrollPageSection className="flex flex-col items-center justify-center">
         <h3 className="max-w-[80%] text-center">
           Originally from Taiwan, boba milk tea has grown to become popular in US cities, especially
-          with students and young adults. The market is at a healthy <b>7.22% CAGR</b> in the US.<sup>*</sup>
+          with students and young adults. The market grows at a healthy <b>7.22% CAGR</b> in the US.<sup>*</sup>
         </h3>
       </ScrollPageSection>
 

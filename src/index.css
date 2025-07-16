@@ -65,11 +65,11 @@ b {
       transform: translateY(0%);
     }
     100% {
-      transform: translateY(100%);
+      transform: translateY(-25%);
     }
   }
 
   .animate-verticalScroll {
-    animation: verticalScroll 90s linear infinite;
+    animation: verticalScroll 30s linear infinite;
   }
 }
