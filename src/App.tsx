@@ -1,4 +1,3 @@
-import './App.css'
 import ScrollPageSection from './components/ScrollPageSection'
 import VerticalSideBanner from './components/VerticalSideBanner'
 
@@ -10,7 +9,12 @@ function App() {
       <VerticalSideBanner side="right" />
 
       <div className="flex justify-center items-center m-10">
-        <img src="/boba machine man.png" style={{ height: '20rem' }} />
+        <img
+          src="/boba machine man.png"
+          className="w-full max-w-[20rem] sm:h-[20rem] h-auto"
+          style={{ objectFit: 'contain' }}
+          alt="Boba Machine Man"
+        />
       </div>
       <div className='mt-20' />
 
@@ -34,7 +38,7 @@ function App() {
       </ScrollPageSection>
 
       <ScrollPageSection className="flex flex-col items-center justify-center my-16">
-        <img src="/all-markets.png" style={{ width: '75%' }} />
+        <img src="/all-markets.png" className='sm:w-[75%] xs:w-[100%] my-8' />
       </ScrollPageSection>
 
       <ScrollPageSection className="flex flex-col items-center justify-center">
@@ -45,7 +49,7 @@ function App() {
       </ScrollPageSection>
 
       <ScrollPageSection className="flex flex-col items-center justify-center my-16">
-        <img src="/tea-market.png" style={{ width: '75%' }} />
+        <img src="/tea-market.png" className='sm:w-[75%] xs:w-[100%] my-8' />
       </ScrollPageSection>
 
       <ScrollPageSection className="flex flex-col items-center justify-center">
@@ -57,12 +61,12 @@ function App() {
       </ScrollPageSection>
 
       <ScrollPageSection className="flex flex-col items-center justify-center">
-        <img src="/student-and-bobamabob.png" style={{ width: '75%' }} />
+        <img src="/student-and-bobamabob.png" className='sm:w-[75%] xs:w-[100%] my-8' />
       </ScrollPageSection>
 
       <ScrollPageSection className="flex flex-col items-center justify-center">
         <h3 className="max-w-[80%] text-center">
-          As you might tell by the professionalism of the website, the machine is in
+          As you might tell by the website, the machine is in
           an early stage, and will need a few more iterations before we
           self operate it in a local mall.
         </h3>
