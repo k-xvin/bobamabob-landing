@@ -1,5 +1,5 @@
 import ScrollPageSection from './components/ScrollPageSection'
-import VerticalSideBanner from './components/VerticalSideBanner'
+import VerticalSideBanner, { HorizontalSideBanner } from './components/VerticalSideBanner'
 
 function App() {
 
@@ -7,8 +7,10 @@ function App() {
     <main>
       <VerticalSideBanner side="left" />
       <VerticalSideBanner side="right" />
+      <HorizontalSideBanner side="left" />
+      <HorizontalSideBanner side="right" />
 
-      <div className="flex justify-center items-center m-10">
+      <div className="flex justify-center items-center m-10 mt-25 sm:mt-10">
         <img
           src="/boba machine man.png"
           className="w-full max-w-[20rem] sm:h-[20rem] h-auto"
@@ -18,7 +20,7 @@ function App() {
       </div>
       <div className='mt-20' />
 
-      <h1 className="sticky top-8">BOBAMABOB</h1>
+      <h1 className="sm:sticky top-8">BOBAMABOB</h1>
       <ScrollPageSection className='flex flex-col items-center justify-center'>
         <h3 className="mt-8 max-w-[80%]">
           A boba milk tea used to be $2.50. Now we pay up to $8. What happened?
@@ -133,7 +135,7 @@ function App() {
         </button>
       </form>
 
-      <footer className='text-grey-400 mt-16'>
+      <footer className='text-grey-400 mb-18 sm:mb-0 mt-16'>
         * according to Fortune Business Insights report FBI101564 | © 2025, Bobamabob
         </footer>
     </main>

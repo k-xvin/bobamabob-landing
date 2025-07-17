@@ -78,12 +78,27 @@ b {
     0% {
       transform: translateY(0%);
     }
+
     100% {
       transform: translateY(-25%);
     }
   }
 
+  @keyframes horizontalScroll {
+    0% {
+      transform: translateX(0%);
+    }
+
+    100% {
+      transform: translateX(-25%);
+    }
+  }
+
   .animate-verticalScroll {
     animation: verticalScroll 30s linear infinite;
+  }
+
+  .animate-horizontalScroll {
+    animation: horizontalScroll 30s linear infinite;
   }
 }
