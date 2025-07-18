@@ -46,7 +46,8 @@ function App() {
       <ScrollPageSection className="flex flex-col items-center justify-center">
         <h3 className="max-w-[80%] text-center">
           Originally from Taiwan, boba milk tea has grown to become popular in US cities, especially
-          with students and young adults. The market grows at a healthy <b>7.22% CAGR</b> in the US.<sup>*</sup>
+          with students and young adults. Originally an affordable desert, it has now transformed into a luxury
+          barista-style drink. The bobamabob will bring it <b>back</b> to its comfort-drink roots.
         </h3>
       </ScrollPageSection>
 
@@ -96,34 +97,34 @@ function App() {
         <label className="flex flex-col">
           <span className="mb-1 font-semibold text-gray-700">Email</span>
           <input
-        type="email"
-        name="email"
-        required
-        className="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-white-500"
-        placeholder="you@email.com"
+            type="email"
+            name="email"
+            required
+            className="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-white-500"
+            placeholder="you@email.com"
           />
         </label>
 
         <label className="flex flex-col">
           <span className="mb-1 font-semibold text-gray-700">First Name</span>
           <input
-        type="text"
-        name="Name"
-        required
-        className="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-white-500"
-        placeholder="Your name"
+            type="text"
+            name="Name"
+            required
+            className="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-white-500"
+            placeholder="Your name"
           />
         </label>
 
         <label className="flex flex-col">
           <span className="mb-1 font-semibold text-gray-700">Message</span>
           <textarea
-        name="message"
-        cols={30}
-        rows={5}
-        required
-        className="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-white-500 resize-none"
-        placeholder="Words!"
+            name="message"
+            cols={30}
+            rows={5}
+            required
+            className="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-white-500 resize-none"
+            placeholder="Words!"
           ></textarea>
         </label>
 
@@ -137,7 +138,7 @@ function App() {
 
       <footer className='text-grey-400 mb-18 sm:mb-0 mt-16'>
         * according to Fortune Business Insights report FBI101564 | © 2025, Bobamabob
-        </footer>
+      </footer>
     </main>
   )
 }
