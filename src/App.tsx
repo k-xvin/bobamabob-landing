@@ -79,8 +79,8 @@ function App() {
 
       <ScrollPageSection className="flex flex-col items-center justify-center">
         <h3 className="max-w-[80%] text-center">
-          We are looking for <b>angels</b>, <b>self-manufacturers</b>, and <b>convenience vending experts</b> to help
-          us bring this to market. Please reach out!
+          We are looking for <b>self-manufacturers</b>, <b>convenience vending experts</b>, and yes-<b>angels</b>. 
+          Please reach out, even if just to chat!
         </h3>
       </ScrollPageSection>
 
