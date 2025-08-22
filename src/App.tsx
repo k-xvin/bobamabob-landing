@@ -75,7 +75,20 @@ function App() {
         </h3>
       </ScrollPageSection>
 
-      <div className='my-16'>video of the working prototype goes here</div>
+      <ScrollPageSection className="flex flex-col items-center justify-center my-16">
+        <div className="w-full max-w-4xl mx-auto px-4">
+          <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+            <iframe
+              className="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
+              src="https://www.youtube.com/embed/bYPYMQougMI"
+              title="BOBAMABOB Video"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>
+      </ScrollPageSection>
 
       <ScrollPageSection className="flex flex-col items-center justify-center">
         <h3 className="max-w-[80%] text-center">
